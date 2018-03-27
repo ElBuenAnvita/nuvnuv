@@ -11,5 +11,17 @@ client.on('message', message => {
   	}
 });
 
+client.on('message', message => {
+    if (message.content === '==help') {
+    	message.channel.send('Decí "nuv" a ver que pasa.');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === '==corrupción') {
+    	message.user_ID.send('La corrpución es mala. *Pero también buena (?*');
+  	}
+});
+
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
