@@ -18,7 +18,7 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-    if (message.content === '==corrupción') {
+    if (message.content === '==corrupcion') {
     	message.userID.send('La corrpución es mala. *Pero también buena (?*');
   	}
 });
