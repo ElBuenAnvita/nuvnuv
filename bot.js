@@ -7,7 +7,7 @@ client.on('ready', () => {
 
 client.on('message', message => {
     if (message.content === 'nuv') {
-    	message.channel.send('Más nuv eres tú diciendo eso.');
+    	message.channel.send('Más nuv eres tú diciendo eso. Llamame, "la pro". jsjsj');
   	}
 });
 
@@ -32,6 +32,24 @@ client.on('message', message => {
 client.on('message', message => {
     if (message.content === 'sad') {
     	message.channel.send('*watashi wa totemo kanashii*');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === 'la pro') {
+    	message.channel.send('ola');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === 'd mar') {
+    	message.channel.send('salada c:');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === 'de mar') {
+    	message.channel.send('salada c:');
   	}
 });
 
