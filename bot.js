@@ -13,7 +13,7 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === '==help') {
-    	message.channel.send('Decí "nuv" a ver que pasa.');
+    	message.channel.send('Decí "nuv" a ver que pasa. También me pongo *sad*, ¿sabes?');
   	}
 });
 
@@ -25,7 +25,13 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === 'baka') {
-    	message.channel.send('*Watashi wa bakada.* :tontotonto:');
+    	message.channel.send('*Watashi wa bakada.*');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === 'sad') {
+    	message.channel.send('*watashi wa totemo kanashii*');
   	}
 });
 
