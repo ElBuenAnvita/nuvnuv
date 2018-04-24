@@ -10,11 +10,14 @@ client.on("message", message => {
   } else
   if (message.content.startsWith(prefix + "tonto")) {
     message.channel.send(">:P");
+  } else
+  if (message.content.startsWith(prefix + "ayuda")) {
+    message.channel.send("Oye, soy nuv o también <la pro>, sólo puedes llamarme así.");
   }
 });
 
 client.on('ready', () => {
-  client.user.setActivity('ser actualizada | ==help')
+  client.user.setActivity('ser actualizada | !ayuda')
 });
 
 client.on('message', message => {
