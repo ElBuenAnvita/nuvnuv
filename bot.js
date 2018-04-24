@@ -13,8 +13,8 @@ client.on("message", message => {
   if (message.content.startsWith(prefix + "tonto")) {
     message.channel.send(">:P");
   } else
-  if (message.content.startsWith(prefix + "ayuda")) {
-    message.channel.send("Oye, soy nuv o también <la pro>, sólo puedes llamarme así.");
+  if (command === 'ayuda') {
+    message.channel.send('Oye, soy nuv o también <la pro>, sólo puedes llamarme así.');
   }
 });
 
