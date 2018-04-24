@@ -1,8 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const prefix = "!";
-const command = args.shift().toLowerCase();
-const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
 
 client.on("message", message => {
   if (!message.content.startsWith(prefix)) return;
