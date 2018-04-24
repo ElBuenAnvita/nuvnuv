@@ -1,5 +1,17 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
+const prefix = "!";
+
+client.on("message", message => {
+  if (!message.content.startsWith(prefix)) return;
+  
+  if (message.content.startsWith(prefix + "ping")) {
+    message.channel.send("Pong! :ping_pong:");
+  } else
+  if (message.content.startsWith(prefix + "tonto")) {
+    message.channel.send(">:P");
+  }
+});
 
 client.on('ready', () => {
   client.user.setActivity('ser actualizada | ==help')
