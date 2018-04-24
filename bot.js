@@ -48,8 +48,8 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-    if (message.content === 'de mar') {
-    	message.channel.send('salada c:');
+    if (message.content === 'nuf ${arg1}') {
+    	message.channel.send('${arg1} es nuf, jsjsj');
   	}
 });
 
