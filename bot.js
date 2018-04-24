@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 
 client.on('ready', () => {
-  client.user.setActivity('ser nuv | ==help')
+  client.user.setActivity('ser actualizada | ==help')
 });
 
 client.on('message', message => {
