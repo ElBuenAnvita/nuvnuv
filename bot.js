@@ -3,13 +3,14 @@ const client = new Discord.Client();
 const prefix = "!";
 
 client.on("message", message => {
+  const m = await
   if (!message.content.startsWith(prefix)) return;
   
   if (message.content.startsWith(prefix + "ping")) {
-    message.channel.send("Pong! :ping_pong:");
+    message.channel.send("Pong! :ping_pong:" + m.createdTimestamp);
   } else
   if (message.content.startsWith(prefix + "tonto")) {
-    message.channel.send(">:P");
+    message.channel.send(">:P\n<:tontotonto:427349831393083393> ");
   } else
   if (message.content.startsWith(prefix + "ayuda")) {
     message.channel.send("Oye, soy nuv o también <la pro>, sólo puedes llamarme así.");
@@ -17,7 +18,7 @@ client.on("message", message => {
 });
 
 client.on('ready', () => {
-  client.user.setActivity('ser actualizada | !ayuda')
+  client.user.setActivity('!ayuda | NuvNuv Bot')
 });
 
 client.on('message', message => {
