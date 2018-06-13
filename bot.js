@@ -5,15 +5,14 @@ const prefix = "!";
 client.on("message", message => {
   if (!message.content.startsWith(prefix)) return;
   
-  if (message.content.startsWith(prefix + "ping")) {
-    const m = await message.channel.send("¿Ping?");
-    m.edit("Pong! :ping_pong:" + m.createdTimestamp - message.createdTimestamp + "ms. API: " + Math.round(client.ping) + "ms");
-  } else
   if (message.content.startsWith(prefix + "tonto")) {
     message.channel.send(">:P\n<:tontotonto:427349831393083393> ");
   } else
   if (message.content.startsWith(prefix + "ayuda")) {
     message.channel.send("Oye, soy nuv o también <la pro>, sólo puedes llamarme así.");
+  } else
+  if (message.content.startsWith(prefix + "ayuda")) {
+    message.channel.send("¡Bot desactualizado! Por favor usa la versión más reciente");
   }
 });
 
