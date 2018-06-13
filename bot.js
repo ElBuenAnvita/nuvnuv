@@ -3,11 +3,11 @@ const client = new Discord.Client();
 const prefix = "!";
 
 client.on("message", message => {
-  const m = await
   if (!message.content.startsWith(prefix)) return;
   
   if (message.content.startsWith(prefix + "ping")) {
-    message.channel.send("Pong! :ping_pong:" + m.createdTimestamp - message.createdTimestamp + "ms. API: " + Math.round(client.ping) + "ms");
+    const m = await message.channel.send("¿Ping?")
+    m.edit("Pong! :ping_pong:" + m.createdTimestamp - message.createdTimestamp + "ms. API: " + Math.round(client.ping) + "ms");
   } else
   if (message.content.startsWith(prefix + "tonto")) {
     message.channel.send(">:P\n<:tontotonto:427349831393083393> ");
